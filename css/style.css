@@ -287,6 +287,12 @@ section.slider-professores .slider .slide-professor {
     padding: 0 4%;
 }
 
+section.slider-professores .slider .slide-professor .profLuiz {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); 
+}
+
 section.slider-professores .slider .slide-professor .professor {
     width: 300px;
     height: 300px;
