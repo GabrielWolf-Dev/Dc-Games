@@ -410,7 +410,8 @@ section .sobre-eletiva ul {
 
 section .sobre-eletiva p > a {
     text-decoration: none;
-    color: #254971;
+    color: rgb(197, 36, 36);
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -885,6 +886,10 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
     
     section.sobre .avisos-eletiva h2, section.sobre .avisos-eletiva p {
         font-size: 18px;
+    }
+
+    section .sobre-eletiva p > a {
+        font-size: 20px;
     }
 
     section.sobre .avisos-eletiva div.img-NB {
