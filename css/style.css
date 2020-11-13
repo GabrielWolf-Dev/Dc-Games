@@ -216,7 +216,7 @@ section.campeonato .content-camp input[type='submit'], section.dcGames-anterior 
     background-color: white;
     font-size: 23px;
     padding: 8px 12px;
-    margin: 10px 0;
+    margin: 20px 0;
     border-radius: 15px;
     outline: none;
     border: 0;
@@ -894,8 +894,28 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
     }
 
     section.dcGames-anterior .img-DcGames {
-        height: 200px;
-        max-width: 200px;
+        height: 150px;
+        max-width: 150px;
+        width: 100%;
+    }
+
+    section.campeonato .content-camp h2, section.dcGames-anterior .content-camp h2 {
+        font-size: 18px;
+    }
+    
+    section.campeonato .content-camp p, section.dcGames-anterior .content-camp p {
+        font-size: 16px;
+    }
+    
+    section.campeonato .content-camp input[type='submit'], section.dcGames-anterior .content-camp input[type='submit']{
+        background-color: white;
+        font-size: 14px;
+        padding: 10px 15px;
+        border-radius: 15px;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        transition: 0.5s;
     }
 
     /*----------------------------------------------------*/
@@ -962,7 +982,7 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
         font-size: 18px;
     }
 
-    /*----------------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------*/
 
     /*-- Página: Eletiva 2019 --*/
 
@@ -976,6 +996,46 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
         text-align: left;
         font-size: 16px;
     }
+
+    /*--------------------------------------------*/
+
+    section.sobre .space .trailer {
+        width: 100%;
+        max-width: 1000px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    section.sobre .trailer > video {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+    /*-- Página: Campeonato --*/
+
+    .imgFocada > img {
+        width: 90vw;
+        height: 30vh;
+    }
+        
+        
+    /*--------------------------------------------*/
+        
+    section.sobre .space > h1, section.sobre h2 {
+        text-align: center;
+        color: #254971;
+        padding: 10px 2%;
+        font-weight: 700;
+        font-size: 24px;
+    }
+        
+        
+    section.sobre .video video, section.sobre .video-reverse video {
+        max-width: 350px;
+    }
+    
 
 }
 
