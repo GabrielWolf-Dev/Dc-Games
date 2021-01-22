@@ -877,7 +877,7 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
     }
 
     section.sobre .sobre-eletiva h1, section.sobre .avisos-eletiva h1 {
-        font-size: 23px;
+        font-size: 20px;
     }
     
     section.sobre .sobre-eletiva p {
@@ -893,8 +893,8 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
     }
 
     section.sobre .avisos-eletiva div.img-NB {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     /*----------------------------------------------------*/
@@ -949,7 +949,7 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
         font-size: 18px;
     }
     
-    footer .contato .face a, footer .creditos .creditos-imgs p > a {
+    footer .contato .face a, footer .creditos .creditos-imgs p > a, footer .contato .face a, footer .creditos .creditos-imgs p {
         font-size: 16px;
     }
     
@@ -1030,18 +1030,34 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
         width: 90vw;
         height: 30vh;
     }
+
+    .focoImg > .btnClose {
+        right: 20px;
+    }
         
         
     /*--------------------------------------------*/
+
+    section.sobre div.space {
+        padding: 40px 20px;
+    }
+
+    div.sobre-eletiva p {
+        margin: 20px 0;
+    }
+    
         
     section.sobre .space > h1, section.sobre h2 {
         text-align: center;
         color: #254971;
         padding: 10px 2%;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 20px;
     }
-        
+
+    section.sobre .video .content-video, section.sobre .video-reverse .content-video {
+        font-size: 16px;
+    } 
         
     section.sobre .video video, section.sobre .video-reverse video {
         max-width: 350px;
@@ -1050,9 +1066,19 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
 
 }
 
+@media screen and (max-width: 480px) {
+
+    section.slider-professores .slider .slide-professor .content-professor {
+        width: 250px;
+        display: inline-block;
+        padding: 20px 0;
+        margin-right: 5%;
+    }
+
+}
+
 @media screen and (max-width: 420px) {
-
-
+    
     section.slider-professores .slider .slide-professor .professor {
         width: 150px;
         height: 150px;
@@ -1065,7 +1091,7 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
         width: 250px;
         display: inline-block;
         padding: 20px 0;
-        margin-right: 10%;
+        margin-right: 5%;
     }
 
     section.slider-professores .slider .slide-professor .content-professor h2 {
