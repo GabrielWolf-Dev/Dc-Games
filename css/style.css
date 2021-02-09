@@ -777,7 +777,7 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
         background-color:  #1E0741;
     }
 
-    div.screen-menu{
+    .screen-menu{
         background-color:#22686d ;
         color: white;
         height: 100vh;
@@ -787,9 +787,27 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
         position: fixed;
         top: 0;
         left: 0;
-        display: none;
+        display: block;
         box-shadow: 3px 3px 15px 5px black;
+        transform: translateX(-110%);
+        -webkit-transform: translateX(-110%);
+        -moz-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+        -o-transform: translateX(-110%);
+        transition: transform ease 0.5s;
      }
+
+    .menuMobile--enable {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+
+    .iconMobile--enable {
+        display: block;
+    }
      
      div.screen-menu nav {
          padding: 40px 0;
@@ -818,37 +836,6 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
          text-decoration: none;
          font-size: 20px;
      }
-
-     @keyframes animOpen {
-
-        0%{
-            transform: translate(-100%);
-            -webkit-transform: translate(-100%);
-            -ms-transform: translate(-100%);
-        }
-    
-        50% {
-            transform: translate(0%);
-            -webkit-transform: translate(0%);
-            -ms-transform: translate(0%);
-        }
-    }
-    
-    @keyframes animClose {
-    
-        0%{
-            transform: translate(0%);
-            -webkit-transform: translate(0%);
-            -ms-transform: translate(0%);
-        }
-    
-        50% {
-            transform: translate(-100%);   
-            -webkit-transform: translate(-100%);
-            -ms-transform: translate(-100%);
-        }
-    
-    }
 
     /*----------------------------------------------------*/
 
