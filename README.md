@@ -1,5 +1,8 @@
-# Site ![Dc Games](https://gabrielwolf-dev.github.io/Dc-Games/)
+# Site [Dc Games](https://gabrielwolf-dev.github.io/Dc-Games/)
 ![Logo da Dc Games](favicon.ico)
+
+## Demonstração do site:
+![Demonstração do site Dc Games](./assets/Dc_Games-demo.gif)
 
 ## Sobre o Projeto:
 
@@ -33,14 +36,14 @@ Eu ganhei muito conhecimento no HTML5, CSS3 e Javascript graças a este projeto 
 
 ### Imagens do Site:
 
-![Home do Site](./imgSite/home.png)
+![Home do Site](./assets/imgSite/home.png)
 
-![Galeria do Site](./imgSite/galery.png)
+![Galeria do Site](./assets/imgSite/galery.png)
 
-![Página: Dc Games 2019](./imgSite/pageDc_2019.png)
+![Página: Dc Games 2019](./assets/imgSite/pageDc_2019.png)
 
-![Slider e Footer](./imgSite/sliderAndFooter.png)
+![Slider e Footer](./assets/imgSite/sliderAndFooter.png)
 
-![Site Responsivo](./imgSite/responsive_screen1.png)
+![Site Responsivo](./assets/imgSite/responsive_screen1.png)
 
-![Site Responsivo](./imgSite/responsive_screen2.png)
+![Site Responsivo](./assets/imgSite/responsive_screen2.png)

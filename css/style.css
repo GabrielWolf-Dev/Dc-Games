@@ -41,7 +41,7 @@ header > .center {
 }
 
 header .logo {
-    background-image: url(../img/Logotipo_DcGames.jpg);
+    background-image: url(../assets//img/Logotipo_DcGames.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -91,9 +91,9 @@ section.banner {
     width: 100%;
     height: 800px;
     padding: 20px 2%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Games.jpg);
-    -webkit-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Games.jpg);
-    -ms-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Games.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Games.jpg);
+    -webkit-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Games.jpg);
+    -ms-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Games.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -159,7 +159,7 @@ section.sobre .avisos-eletiva div.img-NB {
     width: 200px;
     height: 200px;
     background-color:  #F1EAD1;
-    background-image: url(../img/NB.jpg);
+    background-image: url(../assets/img/NB.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -185,7 +185,7 @@ section.campeonato {
 }
 
 section.campeonato .img-trofeu{
-    background-image: url(../img/trofeu.png);
+    background-image: url(../assets/img/trofeu.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -241,7 +241,7 @@ section.dcGames-anterior {
 }
 
 section.dcGames-anterior .img-DcGames {
-    background-image: url(../img/Logotipo_DcGames.jpg);
+    background-image: url(../assets/img/Logotipo_DcGames.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -386,9 +386,9 @@ section.banner-Eletiva2019 {
     width: 100%;
     height: 900px;
     padding: 20px 2%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Eletiva2019.jpeg);
-    -webkit-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Eletiva2019.jpeg);
-    -ms-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Eletiva2019.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Eletiva2019.jpeg);
+    -webkit-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Eletiva2019.jpeg);
+    -ms-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Eletiva2019.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
