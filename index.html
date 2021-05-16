@@ -65,7 +65,6 @@
         </div><!--container-->
     </header>
 
-    <!--Deixar o banner responsivo-->
     <section class="banner">
         <div class="banner__content">
             <h1 class="banner__title">Eletiva - Dc Games Escola Coronel Nhonhô Braga de Piraju</h1>
@@ -73,9 +72,126 @@
         </div><!--banner__content-->
     </section><!--banner-->
 
-    <main></main>
+    <main class="container">
+        <section id="Sobre" class="about">
+            <h2 class="title">O que é Eletiva?</h2>
+            <p class="content">
+                Eletiva é umas das aulas diversificadas que as escolas do Programa de Ensino Integral oferecem, onde os alunos terão um período de aulas de manhã até a tarde e neste programa temos aulas diferenciadas para auxiliar o aluno no seu PV (Projeto de Vida) como matérias de Projeto de vida, Protagonismo Juvenil, Eletivas, Preparação Acadêmica e o mais recente Tecnologia.
+                <br>
+                A Eletiva é a matéria que terá dois professores de disciplinas diferentes que realizam um projeto com determinado assunto interligando as suas disciplinas, onde serão desenvolvidas habilidades profissionais da área contemplada na disciplina, assim inclui o auxílio e o desenvolvimento do Projeto de Vida dos alunos. E no final de cada semestre haverá a culminância das eletivas, onde os alunos apresentam o produto final de desenvolvimento da eletiva, sendo como protagonista desta ação os alunos e professores como auxiliadores.
+            </p>
+        </section><!--about-->
 
-    <footer></footer>
+        <section id="Sobre" class="about">
+            <h2 class="title">Proposta da Dc Games</h2>
+            <p class="content">
+                Na eletiva Dc Games de 2020, vamos mesclar a biologia com a geografia, propondo habilidades de localização geográfica das pandemias e estudo das células e vírus que junto com isso, teremos a atuação dos games e simuladores para termos um estudo aprofundado das nossas disciplinas, incluindo Resident evil e o simulador Idle Human. Além disso, continuará os campeonatos da Dc Games, que também feito em 2019, mas teremos outras modalidades.
+                <br>
+                Para saber mais, visualize a nossa ementa da <a class="about__link" href="./assets/documents/DC Games 2020 plano.pdf">eletiva 2020.</a>
+            </p>
+        </section><!--about-->
+
+        <section class="organization">
+            <h2 class="title">Data e Local da culminancia 2020</h2>
+            <ul>
+                <li class="organization__font-bold">Data indefinida...</li>
+                <li class="organization__font-bold">Cidade de Piraju/SP</li>
+                <li class="organization__font-normal">Rua Coronel Nhonhô Braga, 18800-000</li>
+                <li class="organization__font-bold">ABERTO A TODA A COMUNIDADE E A ENTRADA É GRATUITA</li>
+                <li class="organization__font-normal">Realização</li>
+            </ul>
+            <figure class="organization__figure">
+                <img class="organization__img" src="./assets/img/NB.jpg" alt="Ilustração da escola Nhonhô Braga" />
+                <figcaption class="organization__figure__description">Escola - E.E. Coronel Nhonhô Braga</figcaption>
+            </figure><!--class="organization__figure"-->
+        </section><!--organization-->
+
+        <section class="championship">
+            <div class="championship__content">
+                <h2 class="championship__title">Campeonato</h2>
+                <p class="championship__description">Conheça um pouco mais sobre os </p>
+                <p class="championship__description">torneios realizados</p>
+                <a class="championship__link" href="campeonato.html">Saiba mais</a>
+            </div><!--content-camp-->
+    
+            <img class="championship__img" src="./assets/img/trofeu.png" alt="Ilustração de um troféu" />
+        </section><!--championship-->
+
+        <section class="eletiva">
+            <div class="eletiva__content">
+                <h2 class="eletiva__title">Campeonato</h2>
+                <p class="eletiva__description">Conheça um pouco mais sobre os </p>
+                <p class="eletiva__description">torneios realizados</p>
+                <a class="eletiva__link" href="campeonato.html">Saiba mais</a>
+            </div><!--eletiva-->
+    
+            <img class="eletiva__img" src="./assets/img/Logotipo_DcGames.jpg" alt="Ilustração de um troféu" />
+        </section><!--championship-->
+
+        <section class="slider-teachers container">
+            <i onclick="anterior()" class="fas fa-chevron-left arrow-left"></i>
+            <i onclick="proximo()" class="fas fa-chevron-right arrow-right"></i>
+    
+            <div class="slider-teachers__slider-wrapper">
+                <article class="slider-teachers__slide">
+                    <div class="slider-teachers__teacher slider-teachers__teacher-1" style="background-image: url(./assets/imgProfessores/Rogério.jpeg);"></div><!--teacher-->
+    
+                    <div class="slider-teachers__content">
+                        <h2 class="slider-teachers__content__name">Professor Rogério</h2>
+                        <p>
+                            Graduado em Geografia pela Universidade Estadual de Ponta Grossa-PR (UEPG) e com mestrado em Geografia "Gestão do Território" pela mesma instituição.
+                            Possui experiência no ensino de Geografia e há três anos atua como professor no Programa de Ensino Integral (PEI) da Escola Cel. Nhonhô Braga, Piraju-sp.
+                        </p>
+    
+                        <p>
+                            Atualmente cursa especialização em Geoprocessamento e Geotecnologias pela PUC-Minas 
+                            e atua também como professor de Topografia pelas Faculdades Integradas de Taguaí (FIT).
+                        </p>
+                    </div><!--slider-teachers__content-->
+                </article><!--slider-teachers__slide-->
+    
+                <article class="slider-teachers__slide">
+                    <div class="slider-teachers__teacher" style="background-image: url(./assets/imgProfessores/Gabriel.jpeg);"></div><!--slider-teachers__teacher-->
+    
+                    <div class="slider-teachers__content">
+                        <h2>Professor Gabriel Souza Mendes</h2>
+                        <p>Graduação em Biologia pela Universidade Estadual do Norte do Paraná (UENP);
+                        Pós graduação em Ensino de Ciências pela Universidade Estadual do Norte do Paraná (UENP).</p>
+                    </div><!--slider-teachers__content-->
+                </article><!--slider-teachers__slide-->
+            </div><!--slider-teachers__slider-wrapper-->
+        </section><!--slider-teachers-->
+    </main><!--main container-->
+
+    <footer id="Contato" class="footer">
+        <ul>
+            <li class="footer__links">
+                <i class="fab fa-facebook"></i>
+                <a target="_blanck" href="https://www.facebook.com/people/Nhonh%C3%B4-Braga/100009296590353">EscolaNhonhô Braga</a>
+            </li>
+            <li class="footer__links">
+                <i class="fab fa-youtube"></i>
+                <a target="_blanck" href="https://www.youtube.com/channel/UCF4HJWtTU4wQ3Oaziow6cPg">Sala de Leitura</a>
+            </li>
+            <li class="footer__links">
+                <i class="fab fa-github"></i>
+                <a target="_blanck" href="https://github.com/GabrielWolf-Dev">Desenvolvido por Gabriel Wolf</a>
+            </li>
+        </ul>
+
+        <div class="footer__credits">
+            <h4 class="footer__title">Imagens utilizadas:</h4>
+            <ul>
+                <li class="footer__links">
+                    Imagem de <a target="__blank" href="https://pixabay.com/pt/users/thexomil-5376742/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2453777">Marko Deichmann</a> por <a target="__blank" href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2453777">Pixabay</a>
+                </li>
+                <li class="footer__links">
+                    Imagem de <a target="__blank" href="https://pixabay.com/pt/users/melloghg-4387859/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2015198">MelloGHG</a> por <a target="__blank" href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2015198">Pixabay</a>
+                </li>
+            </ul>
+        </div><!--footer__credits-->
+    </footer><!--footer-->
     <script src="./js/menuMobile.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
-let totalSlides = document.querySelectorAll('.slide-professor').length;
+let totalSlides = document.querySelectorAll('.slider-teachers__slide').length;
 let slideAtual = 0;
 
-let widthSlide = document.querySelector('.slider').style.width = `calc(100vw * ${totalSlides})`;
+let widthSlide = document.querySelector('.slider-teachers__slider-wrapper').style.width = `calc(100vw * ${totalSlides})`;
 
 
 let timeSlide = setInterval(proximo, 3000);
@@ -39,8 +39,8 @@ function anterior() {
 
 function atualizarSlide() {
 
-    let slideW = document.querySelector('.slide-professor').clientWidth;
+    let slideW = document.querySelector('.slider-teachers__slide').clientWidth;
     let marginLeft = (slideAtual * slideW);
-    document.querySelector('.slider').style.marginLeft = `-${marginLeft}px`;
+    document.querySelector('.slider-teachers__slider-wrapper').style.marginLeft = `-${marginLeft}px`;
 
 }
