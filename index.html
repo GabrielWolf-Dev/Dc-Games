@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description" content="Eletiva Dc Games da escola Coronel Nhonhô Braga">
     <meta name="keywords" content="Dc-Games,dc-games,Eletiva Dc Games, eletiva dc games, dc games">
@@ -29,236 +29,53 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
-    <header id="header">
+    <div class="bg-black" onclick="closeMenu()"></div><!--bg-black-->
+    <header>
+        <div class="container">
+            <img class="logo" src="./assets/img/Logotipo_DcGames.jpg" alt="Logotipo da Dc Games" />
 
-        <div class="center">
-
-            <div class="logo"></div><!--logo-->
-
-            <div class="menu-desktop">
-
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="#Sobre">Sobre</a></li>
-                        <li><a href="campeonato.html">Campeonato</a></li>
-                        <li><a href="eletiva2019.html">Eletiva 2019</a></li>
-                        <li><a href="#Contato">Contato</a></li>
-                    </ul>
-                </nav>
-
-                <div class="clear"></div><!--clear-->
-
-            </div><!--menu-desktop-->
-
-            <div class="menu-mobile">
-
-                <div class="icon-mobile" id="icon-mobile">
-            
-                        <div class="icon-open">
-                            <i class="fas fa-align-justify" id="menuOpen" onclick="openMenu()"></i>
-                        </div><!--icon-open-->
-            
-                </div><!--icon-mobile-->
-
-            </div><!--menu-mobile-->
-
-        </div><!--center-->
-
-        <div class="screen-menu" id="screen-menu">
-
-            <div class="icon-close">
-                <i class="fas fa-times" onclick="closeMenu()"></i>
-            </div><!--icon-open-->
-
-            <nav>
+            <nav class="menu-desktop">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a id="sobre" href="#Sobre">Sobre</a></li>
-                    <li><a href="campeonato.html">Campeonato</a></li>
-                    <li><a href="eletiva2019.html">Eletiva 2019</a></li>
-                    <li><a id="contato" href="#Contato">Contato</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="index.html">Início</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="#Sobre">Sobre</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="campeonato.html">Campeonato</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="eletiva2019.html">Eletiva 2019</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="#Contato">Contato</a></li>
+                    <div class="clear"></div><!--clear-->
                 </ul>
-            </nav>
+            </nav><!--menu-desktop-->
+            <nav class="menu-mobile">
+                <button onclick="openMenu()" id="icon-mobile" class="menu-mobile__btn-open">
+                    <i class="fas fa-align-justify"></i>
+                </button><!--menu-mobile__btn-mobile-->
+                <ul class="menu-mobile__nav">
+                    <div class="menu-mobile__box-btn">
+                        <button class="menu-mobile__btn-close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
 
-        </div>
-
+                    <li class="menu-mobile__items"><a class="menu-mobile__links" href="index.html">Início</a></li>
+                    <li class="menu-mobile__items"><a id="sobre" class="menu-mobile__links" href="#Sobre">Sobre</a></li>
+                    <li class="menu-mobile__items"><a class="menu-mobile__links" href="campeonato.html">Campeonato</a></li>
+                    <li class="menu-mobile__items"><a class="menu-mobile__links" href="eletiva2019.html">Eletiva 2019</a></li>
+                    <li class="menu-mobile__items"><a id="contato" class="menu-mobile__links" href="#Contato">Contato</a></li>
+                </ul><!--menu-mobile__nav-->
+            </nav><!--menu-mobile-->
+        </div><!--container-->
     </header>
 
-    <section class="banner" id="banner">
-
-        <div class="center">
-
-            <div class="content-banner">
-                <h2>Eletiva - Dc Games <br/> Escola Coronel Nhonhô Braga de Piraju</h2>
-                <i class="fas fa-gamepad"></i>
-            </div><!--content-banner-->
-
-        </div><!--center-->
-
+    <!--Deixar o banner responsivo-->
+    <section class="banner">
+        <div class="banner__content">
+            <h1 class="banner__title">Eletiva - Dc Games Escola Coronel Nhonhô Braga de Piraju</h1>
+            <i class="fas fa-gamepad banner__icon"></i>
+        </div><!--banner__content-->
     </section><!--banner-->
 
-    <section class="sobre center">
+    <main></main>
 
-        <div class="space">
-
-            <div class="sobre-eletiva">
-                <h1>O que é Eletiva?</h1>
-                <p>
-                    Eletiva é umas das aulas diversificadas que as escolas do Programa de Ensino Integral oferecem, onde os alunos terão um período de aulas de manhã até a tarde e neste programa temos aulas  diferenciadas para auxiliar o aluno no seu PV (Projeto de Vida) como matérias de Projeto de vida, Protagonismo Juvenil, Eletivas, Preparação Acadêmica e o mais recente Tecnologia.
-                </p>
-                <p>
-                    A Eletiva é a matéria que terá dois professores de disciplinas diferentes que realizam um projeto com determinado assunto interligando as suas disciplinas, onde serão desenvolvidas habilidades profissionais da área contemplada na disciplina, assim inclui o auxílio e o desenvolvimento do Projeto de Vida dos alunos. E no final de cada semestre haverá a culminância das eletivas, onde os alunos apresentam o produto final de desenvolvimento da eletiva, sendo como protagonista desta ação os alunos e professores como auxiliadores.
-                </p>
-            </div><!--sobre-eletiva-->
-
-            <div class="sobre-eletiva" id="Sobre">
-                <h1>Proposta da Dc Games</h1>
-                <p>
-                    Na eletiva Dc Games de 2020, vamos mesclar a biologia com a geografia, propondo habilidades de localização geográfica das pandemias e estudo das células e vírus que junto com isso, teremos a atuação dos games e simuladores para termos um estudo aprofundado das nossas disciplinas, incluindo Resident evil e o simulador Idle Human.
-                    Além disso, continuará os campeonatos da Dc Games, que também feito em 2019, mas teremos outras modalidades.
-                </p>
-                <p>
-                    Para saber mais, visualize a nossa ementa da <a target="__blank" href="./assets/documents/DC Games 2020 plano.pdf">eletiva 2020.</a> 
-                </p>
-            </div><!--sobre-eletiva-->
-
-            <div class="avisos-eletiva">
-                <h1>Data e Local da culminancia 2020</h1>
-                <h2>Data indefinida...</h2>
-                <h2>Cidade de Piraju/SP</h2>
-                <p>Rua Coronel Nhonhô Braga, 18800-000</p>
-                <h2>ABERTO A TODA A COMUNIDADE E A ENTRADA É GRATUITA</h2>
-                <p>Realização</p>
-                <div class="img-NB"></div><!--img-NB-->
-                <p>Escola - E.E. Coronel Nhonhô Braga</p>
-            </div><!--sobre-eletiva-->
-
-        </div><!--space-->
-
-    </section><!--sobre center-->
-
-    <section class="campeonato">
-
-        <div class="content-camp">
-
-            <h2>Campeonato</h2>
-            <p>Conheça um pouco mais sobre os </p>
-            <p>torneios realizados</p>
-            <a href="campeonato.html"><input type="submit" value="Saiba Mais"></a>
-
-        </div><!--content-camp-->
-
-        <div class="img-trofeu"></div><!--img-riven-->
-
-        <div class="clear"></div>
-
-    </section><!--campeonato-->
-
-    <section class="dcGames-anterior">
-
-        <div class="content-camp">
-
-            <h2>Eletiva 2019</h2>
-            <p>Para mais informações sobre as eletivas passadas e seus eventos</p>
-            <a href="eletiva2019.html"><input type="submit" value="Saiba Mais"></a>
-
-        </div><!--content-camp-->
-
-        <div class="img-DcGames"></div><!--img-DcGames-->
-
-        <div class="clear"></div>
-
-    </section><!--dcGames-anterior-->
-
-    <section class="slider-professores center">
-
-        <div class="arrow-left" onclick="anterior()"><i class="fas fa-chevron-left"></i></div><!--arrow-left-->
-        <div class="arrow-right" onclick="proximo()"><i class="fas fa-chevron-right"></i></div><!--arrow-right-->
-
-        <div class="slider">
-
-            <div class="slide-professor">
-
-                <div class="professor" style="background-image: url(./assets/imgProfessores/Rogério.jpeg);"></div><!--professor-->
-
-                <div class="content-professor">
-                    <h2>Professor Rogério</h2>
-                    <p>
-                        Graduado em Geografia pela Universidade Estadual de Ponta Grossa-PR (UEPG) e com mestrado em Geografia "Gestão do Território" pela mesma instituição.
-                        Possui experiência no ensino de Geografia e há três anos atua como professor no Programa de Ensino Integral (PEI) da Escola Cel. Nhonhô Braga, Piraju-sp.
-                    </p>
-
-                    <p>
-                        Atualmente cursa especialização em Geoprocessamento e Geotecnologias pela PUC-Minas 
-                        e atua também como professor de Topografia pelas Faculdades Integradas de Taguaí (FIT).
-                    </p>
-
-                </div><!--content-professor-->
-
-            </div><!--slide-professor-->
-
-            <div class="slide-professor">
-
-                <div class="professor" style="background-image: url(./assets/imgProfessores/Gabriel.jpeg);"></div><!--professor-->
-
-                <div class="content-professor">
-                    <h2>Professor Gabriel Souza Mendes</h2>
-                    <p>Graduação em Biologia pela Universidade Estadual do Norte do Paraná (UENP);
-                    Pós graduação em Ensino de Ciências pela Universidade Estadual do Norte do Paraná (UENP).</p>
-                </div><!--content-professor-->
-
-            </div><!--slide-professor-->
-
-        </div><!--slider-->
-
-    </section><!--slider-professores center-->
-
-    <footer id="Contato">
-            
-        <div class="contato">
-
-            <h2>Caso você queira ficar conectado com o que fazemos na eletiva ou na escola acesse:</h2>
-
-            <div class="face">
-                <i class="fab fa-facebook"></i>
-
-                <a target="_blanck" href="https://www.facebook.com/people/Nhonh%C3%B4-Braga/100009296590353">Escola Nhonhô Braga</a>
-            </div><!--face-->
-
-            <hr>
-
-            <div class="desenvolvedor-site">
-
-                <a target="_blanck" href="https://github.com/GabrielWolf-Dev"><i class="fab fa-github"></i></a> 
-                <p>Desenvolvido por Gabriel Wolf</p>
-
-            </div><!--desenvolvedor-site-->
-
-        </div><!--contato-->
-
-        <div class="creditos">
-
-            <div class="creditos-imgs">
-
-                <h2>Imagens utilizadas:</h2>
-
-                <p>
-                    Imagem de <a target="__blank" href="https://pixabay.com/pt/users/thexomil-5376742/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2453777">Marko Deichmann</a> por <a target="__blank" href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2453777">Pixabay</a>
-                </p>
-
-                <p>
-                    Imagem de <a target="__blank" href="https://pixabay.com/pt/users/melloghg-4387859/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2015198">MelloGHG</a> por <a target="__blank" href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2015198">Pixabay</a>
-                </p>
-
-            </div><!--creditos-imgs-->
-
-        </div><!--creditos-->    
-
-    </footer>
-
-    <script src="./js/slider.js"></script>
+    <footer></footer>
     <script src="./js/menuMobile.js"></script>
 </body>
 </html>

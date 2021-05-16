@@ -1,790 +1,167 @@
-/*-- Reset da página --*/
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    --color-blue:#254971;
+    --color-beige:#f1ead1;
+    --color-red:#cd4f24;
+    --color-purple-dark:#1e0741;
+    --color-aqua-dark: #22686d;
+    --color-white: #FFFF;
+    --color-black: black;
 }
 
 html, body {
     height: 100%;
 }
 
-/*-- CLasse default para o site --*/
-
-.center {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+ul {
+    list-style: none;
 }
 
-/*-- Limpando floats --*/
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
 .clear {
     clear: both;
 }
 
-/* rgb(32, 97, 238)*/
+.bg-black {
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: width ease 0.3s;
+}
 
-/*-- Home do site --*/
+/* Cabeçário do Website */
 
-
-header{
+header {
     width: 100%;
     padding: 20px 2%;
-    background-color:#254971;
+    background-color: var(--color-blue);
 }
 
-header > .center {
+header > .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-header .logo {
-    background-image: url(../assets//img/Logotipo_DcGames.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 60px;
+.logo {
+    width: 65px;
     height: 60px;
-}
-
-.menu-desktop nav ul{
-    list-style-type: none;
-}
-
-.menu-desktop nav ul li {
-    padding: 10px 15px;
-    margin: 10px 5px;
-    float: left;
-    border-radius: 15px;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
-
-.menu-desktop nav ul li:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.menu-desktop nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.5s;
-}
-
-.menu-desktop nav ul li a:hover {
-    color: black;
 }
 
 .menu-mobile {
     display: none;
 }
 
-.screen-menu {
-    display: none;
+.menu-desktop__items {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    float: left;
+    border-radius: 15px;
+    transition: all ease 0.5s;
 }
 
-/*----------------------------------------------------*/
+.menu-desktop__items:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
 
-section.banner {
+.menu-desktop__links {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+}
+
+.menu-desktop__links:hover {
+    color: var(--color-black);
+}
+
+/* Home do Website: */
+
+.banner {
     width: 100%;
     height: 800px;
-    padding: 20px 2%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Games.jpg);
-    -webkit-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Games.jpg);
-    -ms-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Games.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
     position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Games.jpg);
+    -o-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Games.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
 
-.content-banner {
-    text-align: center;
-    font-size: 26px;
-    font-weight: normal;
-    color: white;
+.banner__content {
+    width: 100%;
+    max-width: 800px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-}
-
-.content-banner > i {
-    margin-top: 20px 0;
-    font-size: 100px;
-}
-
-/*--------------------------------------------*/
-
-section.sobre {
-    background-color: #F1EAD1;
-    height: auto;
-    padding: 20px 2%;
-    width: 100%;
-}
-
-section.sobre div.space {
-    padding: 40px 60px 40px 60px;
-}
-
-section.sobre .sobre-eletiva, section.sobre .avisos-eletiva {
-    margin-bottom: 80px;
-    text-align: center;
-}
-
-section.sobre .sobre-eletiva h1, section.sobre .avisos-eletiva h1 {
-    font-size: 30px;
-    padding-bottom: 30px;
-    color:  #254971;
-}
-
-section.sobre .sobre-eletiva p {
-    font-size: 20px;
-    text-align: justify;
-    line-height: 36px;
-    color: black;
-}
-
-section.sobre .avisos-eletiva h2, section.sobre .avisos-eletiva p {
-    padding: 10px 0;
-    font-size: 23px;
-    color: black;
-}
-
-section.sobre .avisos-eletiva div.img-NB {
-    width: 200px;
-    height: 200px;
-    background-color:  #F1EAD1;
-    background-image: url(../assets/img/NB.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    text-align: center;
-    display: inline-block;
-}
-
-section.sobre .avisos-eletiva p:nth-of-type(3) {
-    color:  #254971;
-    font-weight: bold;
-}
-
-section.campeonato {
-    width: 100%;
-    max-width: 1280px;
-    height: 350px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #1E0741;
-    padding: 0 2%;
-    display: flex;
-    justify-content: space-between;
-}
-
-section.campeonato .img-trofeu{
-    background-image: url(../assets/img/trofeu.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 50%;
-    height: 250px;
-    margin-top: 85px;
-}
-
-section.campeonato .content-camp, section.dcGames-anterior .content-camp{
-    width: 50%;
-    padding-top: 100px;
-}
-
-
-section.campeonato .content-camp h2, section.dcGames-anterior .content-camp h2{
-    font-size: 27px;
-    padding: 8px 0;
+    -moz-transform: translate(-50%, -50%);
+    font-size: 26px;
     color: white;
 }
 
-section.campeonato .content-camp p, section.dcGames-anterior .content-camp p{
-    font-size: 23px;
-    padding: 8px 0;
-    color: white;
+.banner__icon {
+    font-size: 80px;
 }
-
-section.campeonato .content-camp input[type='submit'], section.dcGames-anterior .content-camp input[type='submit']{
-    background-color: white;
-    font-size: 23px;
-    padding: 8px 12px;
-    margin: 20px 0;
-    border-radius: 15px;
-    outline: none;
-    border: 0;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-section.campeonato .content-camp input[type='submit']:hover, section.dcGames-anterior .content-camp input[type='submit']:hover {
-    background-color: rgb(210, 210, 210);
-}
-
-section.dcGames-anterior {
-    width: 100%;
-    max-width: 1280px;
-    height: 350px;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #22686d;
-    padding: 0 2%;
-    display: flex;
-    justify-content: space-between;
-}
-
-section.dcGames-anterior .img-DcGames {
-    background-image: url(../assets/img/Logotipo_DcGames.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 50%;
-    max-width: 250px;
-    height: 250px;
-    margin-top: 80px;
-}
-
-/*--------------------------------------------*/
-
-section.slider-professores {
-    width: 100%;
-    padding: 20px 2%;
-    background-color: #1E0741;
-    overflow: hidden;
-    position: relative;
-}
-
-.arrow-left, .arrow-right {
-    font-size: 30px;
-    padding: 10px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    cursor: pointer;
-}
-
-.arrow-right {
-    right: 30px;
-}
-
-section.slider-professores .slider {
-    display: flex;
-    transition: ease 0.4s;
-}
-
-section.slider-professores .slider .slide-professor {
-    width: 100vw;
-    padding: 10px 0;
-    display: flex;
-    padding: 0 4%;
-}
-
-section.slider-professores .slider .slide-professor .profLuiz {
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg); 
-}
-
-section.slider-professores .slider .slide-professor .professor {
-    width: 300px;
-    height: 300px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    border: 10px solid #390d7aef;
-}
-
-section.slider-professores .slider .slide-professor .content-professor {
-    width: 600px;
-    color: white;
-    text-align: justify;
-    padding: 60px 60px 0 80px ; 
-}
-section.slider-professores .slider .slide-professor .content-professor h2 {
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-/*--------------------------------------------*/
-
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    background-color: #254971;
-    color: white;
-    display: flex;
-}
-
-footer .contato {
-    padding: 10px 2%;
-    width: 50%;
-}
-
-footer .creditos {
-    padding: 10px 2%;
-    width: 50%;
-}
-
-footer h2 {
-    font-size: 20px;
-}
-
-footer .contato .face, footer .center .desenvolvedor-site, footer .creditos .creditos-imgs {
-    padding: 20px 0;
-}
-
-footer .contato .face i {
-    font-size: 32px;
-    position: relative;
-    top: 3px;
-}
-
-footer .contato .face a,  footer .creditos .creditos-imgs p > a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    transition: 0.5s;
-}
-
-footer .creditos .creditos-imgs p {
-    padding: 10px 0;
-    font-size: 20px;
-}
-
-footer hr {
-    width: 50%;
-    margin: 0 auto;
-}
-
-footer .contato .desenvolvedor-site a {
-    text-decoration: none;
-    color: white;
-    font-size: 40px;
-    transition: 0.5s;
-}
-
-footer .contato a:hover, footer .creditos .creditos-imgs p > a:hover {
-    color: black;
-}
-
-
-/*----------------------------------------------------------------------------------------------------------------------------*/
-
-/*-- Página: Eletiva 2019 --*/
-
-section.banner-Eletiva2019 {
-    width: 100%;
-    height: 900px;
-    padding: 20px 2%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Eletiva2019.jpeg);
-    -webkit-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Eletiva2019.jpeg);
-    -ms-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/Eletiva2019.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-section.banner-Eletiva2019 .content-banner {
-    font-size: 30px;
-}
-
-/*--------------------------------------------*/
-
-section .sobre-eletiva ul {
-    padding: 30px 0;
-    list-style-position: inside;
-    text-align: left;
-    font-size: 18px;
-}
-
-section .sobre-eletiva p > a {
-    text-decoration: none;
-    color: rgb(197, 36, 36);
-    font-size: 24px;
-    font-weight: 600;
-}
-
-section.sobre .space .trailer {
-    width: 100%;
-    max-width: 1000px;
-    padding: 20px 2%;
-    text-align: center;
-}
-
-section.sobre .space .trailer > h1 {
-    font-size: 27px;
-    color: #254971;
-}
-
-section.sobre .trailer > video {
-    width: 100%;
-    padding-top: 30px;
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------*/
-
-/*-- Página: Campeonato --*/
-
-section.galeria {
-    width: 100%;
-    padding: 20px 2% 40px 2%;
-    background-color: rgb(209, 209, 209);
-}
-
-section.galeria .center > h1 {
-    text-align: center;
-    color: #254971;
-    padding: 10px 2%;
-    font-weight: 700;
-    font-size: 28px;
-}
-
-section.galeria .img-wraper {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-section.galeria .img-wraper .img {
-    width: 260px;
-    height: 260px;
-    margin-top: 20px;
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-section.galeria .img-wraper .img:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-}
-
-.focoImg {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    z-index: 1;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.8s linear, opacity 0.5s linear;
-}
-
-.focoImg > .btnClose {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-}
-
-.imgFocada {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0);
-    transition: 0.3s;
-}
-
-.imgFocada > img {
-    width: 60vw;
-    height: 60vh;
-}
-
- .active .imgFocada{
-    transform: scale(1);
-}
-
-.active {
-    visibility: visible;
-    opacity: 1;
-}
-
-/*--------------------------------------------*/
-
-section.sobre .space > h1, section.sobre h2 {
-    text-align: center;
-    color: #254971;
-    padding: 10px 2%;
-    font-weight: 700;
-    font-size: 28px;
-}
-
-section.sobre .video, section.sobre .video-reverse {
-    width: 100%;
-    padding: 10px 2%;
-    display: flex;
-    justify-content: space-between;
-}
-
-section.sobre .video-reverse {
-    flex-direction: row-reverse;
-}
-
-section.sobre .video video, section.sobre .video-reverse video {
-    max-width: 350px;
-    width: 100%;
-    height: 250px;
-    padding: 0 4%;
-}
-
-section.sobre .video .content-video p, section.sobre .video-reverse .content-video p {
-    padding: 10px 0;
-}
-
-section.sobre .video .content-video, section.sobre .video-reverse .content-video {
-    width: 100%;
-    max-width: 600px;
-    padding: 70px 4% 0 4%;
-    font-size: 18px;
-    text-align: justify;
-}
-
-/*--------------------------------------------*/
-
-@media screen and (max-width: 1440px) {
-
-    section.center {
-        max-width: 1000px;
-    }
-
-    /*--------------------------------------------*/
-
-    section.campeonato, section.dcGames-anterior {
-        width: 100%;
-        max-width: 1000px;
-    }
-
-    /*--------------------------------------------*/
-
-    section.slider-professores .slider .slide-professor .professor {
-        width: 250px;
-        height: 250px;
-        margin-top: 50px;
-    }
-        
-    section.slider-professores .slider .slide-professor .content-professor {
-        width: 500px;
-        color: white;
-        text-align: justify;
-        padding: 60px 60px 0 80px ; 
-    }
-
-}
-
 
 @media screen and (max-width: 1200px) {
 
-    header > .center {
+    header > .container {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-
-    /*--------------------------------------------*/
-
-    section.banner {
-        width: 100%;
-        height: 600px;
-    }
-    
-    .content-banner {
-        width: 100%;
-        text-align: center;
-        font-size: 24px;
-        padding: 0 2%;
-    }
-    
-    .content-banner > i {
-        margin-top: 20px 0;
-        font-size: 80px;
-    }
-
-    /*--------------------------------------------*/
-
-    section.center {
-        max-width: 800px;
-    }
-
-    section.sobre .sobre-eletiva h1, section.sobre .avisos-eletiva h1 {
-        font-size: 26px;
-    }
-    
-    section.sobre .sobre-eletiva p {
-        font-size: 18px;
-    }
-    
-    section.sobre .avisos-eletiva h2, section.sobre .avisos-eletiva p {
-        font-size: 20px;
-    }
-
-    /*--------------------------------------------*/
-
-    section.campeonato, section.dcGames-anterior {
-        width: 100%;
-        height: 300px;
-        max-width: 800px;
-    }
-
-    section.campeonato .img-trofeu, section.dcGames-anterior .img-DcGames {
-        height: 200px;
-    }
-    
-    section.campeonato .content-camp, section.dcGames-anterior .content-camp {
-        width: 50%;
-        text-align: center;
-        padding: 60px 2%;
-    }
-
-    section.campeonato .content-camp h2, section.dcGames-anterior .content-camp h2 {
-        font-size: 23px;
-    }
-    
-    section.campeonato .content-camp p, section.dcGames-anterior .content-camp p {
-        font-size: 18px;
-    }
-    
-    section.campeonato .content-camp input[type='submit'], section.dcGames-anterior .content-camp input[type='submit']{
-        background-color: white;
-        font-size: 18px;
-        padding: 10px 15px;
-        border-radius: 15px;
-        outline: none;
-        border: 0;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-
-
-    /*--------------------------------------------*/
-
-    section.slider-professores .slider .slide-professor {
-        width: 100vw;
-    }
-
-    section.slider-professores .slider .slide-professor .professor {
-        width: 250px;
-        height: 250px;
-        margin-top: 50px;
-    }
-        
-    section.slider-professores .slider .slide-professor .content-professor {
-        width: 400px;
-        color: white;
-        text-align: justify;
-        padding: 60px 60px 0 60px ; 
-    }
-
-    section.slider-professores .slider .slide-professor .content-professor p {
-        font-size: 16px;
-    }
-
-    section.slider-professores .slider .slide-professor .content-professor h2 {
-        font-size: 20px;
-    }
-    
-/*----------------------------------------------------------------------------------------------------------------------------*/
-
-    /*-- Página: Eletiva 2019 --*/
-
-    section.banner-Eletiva2019 {
-        height: 600px;
-    }
-
-    section.banner-Eletiva2019 .content-banner, section.sobre .space .trailer > h1 {
-        font-size: 23px;
-    }
-
-/*----------------------------------------------------------------------------------------------------------------------------*/
-
-    /*-- Página: Campeonato --*/
-
-    section.galeria .img-wraper .img {
-        width: 200px;
-        height: 200px;
-        padding: 10px;
-    }
-    
-/*--------------------------------------------*/
-
-    section.sobre .space > h1, section.sobre h2 {
-        font-size: 23px;
-    }   
-
-    section.sobre .video, section.sobre .video-reverse {
-        display: inline-block;
-        text-align: center;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-
-    /*-- Menu Mobile --*/
-
     .menu-desktop {
         display: none;
     }
 
     .menu-mobile {
         display: block;
-        text-align: center;
     }
 
-    .icon-open > i {
-        font-size: 30px;
+    .menu-mobile__btn-open, .menu-mobile__btn-close {
+        width: 42px;
+        height: 42px;
         cursor: pointer;
-        padding: 15px;
-        border-radius: 50%;
-        transition: 0.5s;
+        border: 0;
+        background-color: transparent;
+    }
+
+    .menu-mobile__btn-close {
+        margin-left: 4%;
+    }
+
+    .menu-mobile__btn-open > i, .menu-mobile__btn-close > i {
         color: white;
+        font-size: 36px;
     }
 
-    .icon-open > i:hover, .icon-close  > i:hover {
-        background-color: rgba(255, 255, 255, 0.8);
-        color: black;
-    }
-
-    .icon-close > i {
-        position: relative;
-        margin: 21px 0;
-        left: 10px;
-        font-size: 28px;
-        padding: 15px 18px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-
-    .icon-close {
-        background-color:  #1E0741;
-    }
-
-    .screen-menu{
-        background-color:#22686d ;
-        color: white;
+    .menu-mobile__nav {
+        width: 50%;
         height: 100vh;
-        max-width: 260px;
-        width: 100%;
-        z-index: 9999;
+        background-color: var(--color-aqua-dark);
+        color: white;
         position: fixed;
+        z-index: 2;
         top: 0;
         left: 0;
         display: block;
@@ -795,298 +172,49 @@ section.sobre .video .content-video, section.sobre .video-reverse .content-video
         -ms-transform: translateX(-110%);
         -o-transform: translateX(-110%);
         transition: transform ease 0.5s;
-     }
+    }
 
-    .menuMobile--enable {
+    .menu-mobile__box-btn {
+        width: 100%;
+        padding: 24px 0;
+        background-color: var(--color-purple-dark);
+    }
+
+    .menu-mobile__items {
+        padding: 16px 6%;
+        text-align: left;
+        border-bottom: 1px solid var(--color-white);
+    }
+
+    .menu-mobile__items:nth-of-type(1) {
+        padding-top: 48px;
+    }
+
+    .menu-mobile__items:last-child {
+        border-bottom: 0;
+    }
+
+    .menu-mobile__links {
+        color: var(--color-white);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .menu-mobile__nav--active {
         transform: translateX(0%);
         -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
         -ms-transform: translateX(0%);
         -o-transform: translateX(0%);
     }
-
-    .iconMobile--enable {
-        display: block;
-    }
-     
-     div.screen-menu nav {
-         padding: 40px 0;
-         text-align: left;
-     }
-     
-     div.screen-menu ul {
-         list-style-type: none;
-     }
-     
-     div.screen-menu li {
-         padding: 20px 15px;
-         transition: 0.5s;
-     }
-     
-     div.screen-menu li:hover{
-         background-color: rgba(255, 255, 255, 0.6);
-     }
-     
-     div.screen-menu a:hover {
-         color: black;
-     }
-     
-     div.screen-menu a{
-         color: white;
-         text-decoration: none;
-         font-size: 20px;
-     }
-
-    /*----------------------------------------------------*/
-
-    section.banner {
-        width: 100%;
-        height: 500px;
-    }
-    
-    .content-banner {
-        width: 100%;
-        text-align: center;
-        font-size: 17px;
-        padding: 0 2%;
-    }
-    
-    .content-banner > i {
-        margin-top: 20px 0;
-        font-size: 60px;
-    }
-
-    /*----------------------------------------------------*/
-
-
-    section.center {
-        max-width: 100%;
-    }
-
-    section.sobre .sobre-eletiva h1, section.sobre .avisos-eletiva h1 {
-        font-size: 20px;
-    }
-    
-    section.sobre .sobre-eletiva p {
-        font-size: 16px;
-    }
-    
-    section.sobre .avisos-eletiva h2, section.sobre .avisos-eletiva p {
-        font-size: 18px;
-    }
-
-    section .sobre-eletiva p > a {
-        font-size: 20px;
-    }
-
-    section.sobre .avisos-eletiva div.img-NB {
-        width: 150px;
-        height: 150px;
-    }
-
-    /*----------------------------------------------------*/
-
-
-    section.campeonato, section.dcGames-anterior {
-        max-width: 100%;
-    }
-
-    section.dcGames-anterior .img-DcGames {
-        height: 150px;
-        max-width: 150px;
-        width: 100%;
-    }
-
-    section.campeonato .content-camp h2, section.dcGames-anterior .content-camp h2 {
-        font-size: 18px;
-    }
-    
-    section.campeonato .content-camp p, section.dcGames-anterior .content-camp p {
-        font-size: 16px;
-    }
-    
-    section.campeonato .content-camp input[type='submit'], section.dcGames-anterior .content-camp input[type='submit']{
-        background-color: white;
-        font-size: 14px;
-        padding: 10px 15px;
-        border-radius: 15px;
-        outline: none;
-        border: 0;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-
-    /*----------------------------------------------------*/
-
-    footer {
-        display: inline-block;
-    }
-
-    footer .contato {
-        padding: 10px 2%;
-        width: 100%;
-    }
-    
-    footer .creditos {
-        padding: 10px 2%;
-        width: 100%;
-    }
-
-    footer h2 {
-        font-size: 18px;
-    }
-    
-    footer .contato .face a, footer .creditos .creditos-imgs p > a, footer .contato .face a, footer .creditos .creditos-imgs p {
-        font-size: 16px;
-    }
-    
-    footer .contato .desenvolvedor-site a {
-        font-size: 40px;
-        transition: 0.5s;
-    }
-
-    /*--------------------------------------------*/
-
-    section.slider-professores .slider .slide-professor {
-        width: 100vw;
-        display: inline-block;
-        text-align: center;
-    }
-
-    section.slider-professores .arrow-right{
-        right: 10px;
-    }
-
-    section.slider-professores .slider .slide-professor .professor {
-        width: 200px;
-        height: 200px;
-        margin-top: 60px;
-        margin-right: 8%;
-        display: inline-block;
-    }
-        
-    section.slider-professores .slider .slide-professor .content-professor {
-        width: 360px;
-        display: inline-block;
-        padding: 20px 50px;
-        margin-right: 8%;
-    }
-
-    section.slider-professores .slider .slide-professor .content-professor p {
-        font-size: 14px;
-    }
-
-    section.slider-professores .slider .slide-professor .content-professor h2 {
-        font-size: 18px;
-    }
-
-/*---------------------------------------------------------------------------------------------------------------------------*/
-
-    /*-- Página: Eletiva 2019 --*/
-
-    section.banner-Eletiva2019 {
-        height: 500px;
-    }
-
-    section .sobre-eletiva ul {
-        padding: 30px 0;
-        list-style-position: inside;
-        text-align: left;
-        font-size: 16px;
-    }
-
-    /*--------------------------------------------*/
-
-    section.sobre .space .trailer {
-        width: 100%;
-        max-width: 1000px;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-    section.sobre .trailer > video {
-        width: 100%;
-        padding-top: 30px;
-    }
-
-/*---------------------------------------------------------------------------------------------------------------------------*/
-
-    /*-- Página: Campeonato --*/
-
-    .imgFocada > img {
-        width: 90vw;
-        height: 30vh;
-    }
-
-    .focoImg > .btnClose {
-        right: 20px;
-    }
-        
-        
-    /*--------------------------------------------*/
-
-    section.sobre div.space {
-        padding: 40px 20px;
-    }
-
-    div.sobre-eletiva p {
-        margin: 20px 0;
-    }
-    
-        
-    section.sobre .space > h1, section.sobre h2 {
-        text-align: center;
-        color: #254971;
-        padding: 10px 2%;
-        font-weight: 700;
-        font-size: 20px;
-    }
-
-    section.sobre .video .content-video, section.sobre .video-reverse .content-video {
-        font-size: 16px;
-    } 
-        
-    section.sobre .video video, section.sobre .video-reverse video {
-        max-width: 350px;
-    }
-    
-
 }
 
-@media screen and (max-width: 480px) {
-
-    section.slider-professores .slider .slide-professor .content-professor {
-        width: 250px;
-        display: inline-block;
-        padding: 20px 0;
-        margin-right: 5%;
+@media screen and (max-width: 500px) {
+    .menu-mobile__nav {
+        width: 100%;
     }
 
-}
-
-@media screen and (max-width: 420px) {
-    
-    section.slider-professores .slider .slide-professor .professor {
-        width: 150px;
-        height: 150px;
-        margin-top: 60px;
-        margin-right: 10%;
-        display: inline-block;
+    .menu-mobile__items {
+        text-align: center;
     }
-        
-    section.slider-professores .slider .slide-professor .content-professor {
-        width: 250px;
-        display: inline-block;
-        padding: 20px 0;
-        margin-right: 5%;
-    }
-
-    section.slider-professores .slider .slide-professor .content-professor h2 {
-        font-size: 16px;
-    }
-
-    section.slider-professores .slider .slide-professor .content-professor p {
-        font-size: 14px;
-    }
-
 }

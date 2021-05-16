@@ -1,30 +1,18 @@
-const screen_menu = document.getElementById('screen-menu');
-const icon_mobile = document.getElementById('icon-mobile');
+const navMenu = document.querySelector('.menu-mobile__nav');
+const bgBlack = document.querySelector('.bg-black');
 
-const linksMenu = {
-   sobre: document.getElementById('sobre'),
-   contato: document.getElementById('contato')
-};
-const { sobre, contato } = linksMenu;
-
-function linkMenuAtivo(evento1, evento2) {
-   const eventos = [evento1, evento2];
-
-   eventos.forEach(evento => {
-      evento.addEventListener('click', () => {
-         closeMenu();
-         icon_mobile.style.display = 'block'; 
-      });
-   });
-}
+const linksMenu = [
+   document.getElementById('sobre'),
+   document.getElementById('contato')
+];
 
 function openMenu() {
-   screen_menu.classList.add('menuMobile--enable');
-   icon_mobile.classList.remove('iconMobile--enable');
-   linkMenuAtivo(sobre, contato);
+   navMenu.classList.add('menu-mobile__nav--active');
+   linksMenu.forEach(link => link.addEventListener('click', () => closeMenu()));
+   bgBlack.style.width = "100%";
 }
 
 function closeMenu() {
-   screen_menu.classList.remove('menuMobile--enable');
-   icon_mobile.classList.add('iconMobile--enable');
+   navMenu.classList.remove('menu-mobile__nav--active');
+   bgBlack.style.width = "0";
 }

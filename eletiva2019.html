@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Saiba mais sobre a eletiva 2019 da Dc Games">
     <meta name="keywords" content="Dc-Games 2019,dc-games 2019,Eletiva Dc Games 2019">
     <meta name="author" content="Gabriel Wolf">
@@ -28,242 +28,41 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
-    <header id="header">
+    <div class="bg-black" onclick="closeMenu()"></div><!--bg-black-->
+    <header>
+        <div class="container">
+            <img class="logo" src="./assets/img/Logotipo_DcGames.jpg" alt="Logotipo da Dc Games" />
 
-        <div class="center">
-
-            <div class="logo"></div><!--logo-->
-
-            <div class="menu-desktop">
-
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="#Sobre">Sobre</a></li>
-                        <li><a href="campeonato.html">Campeonato</a></li>
-                        <li><a href="eletiva2019.html">Eletiva 2019</a></li>
-                        <li><a href="#Contato">Contato</a></li>
-                    </ul>
-                </nav>
-
-                <div class="clear"></div><!--clear-->
-
-            </div><!--menu-desktop-->
-
-            <div class="menu-mobile">
-
-                <div class="icon-mobile" id="icon-mobile">
-            
-                        <div class="icon-open">
-                            <i class="fas fa-align-justify" id="menuOpen" onclick="openMenu()"></i>
-                        </div><!--icon-open-->
-            
-                </div><!--icon-mobile-->
-
-            </div><!--menu-mobile-->
-
-        </div><!--center-->
-
-        <div class="screen-menu" id="screen-menu">
-
-            <div class="icon-close">
-                <i class="fas fa-times" onclick="closeMenu()"></i>
-            </div><!--icon-open-->
-
-            <nav>
+            <nav class="menu-desktop">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a id="sobre" href="#Sobre">Sobre</a></li>
-                    <li><a href="campeonato.html">Campeonato</a></li>
-                    <li><a href="eletiva2019.html">Eletiva 2019</a></li>
-                    <li><a id="contato" href="#Contato">Contato</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="index.html">Início</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="#Sobre">Sobre</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="campeonato.html">Campeonato</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="eletiva2019.html">Eletiva 2019</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="#Contato">Contato</a></li>
+                    <div class="clear"></div><!--clear-->
                 </ul>
-            </nav>
+            </nav><!--menu-desktop-->
+            <nav class="menu-mobile">
+                <button onclick="openMenu()" id="icon-mobile" class="menu-mobile__btn-open">
+                    <i class="fas fa-align-justify"></i>
+                </button><!--menu-mobile__btn-mobile-->
+                <ul class="menu-mobile__nav">
+                    <div class="menu-mobile__box-btn">
+                        <button class="menu-mobile__btn-close" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
 
-        </div>
-
+                    <li class="menu-mobile__items"><a class="menu-mobile__links" href="index.html">Início</a></li>
+                    <li class="menu-mobile__items"><a id="sobre" class="menu-mobile__links" href="#Sobre">Sobre</a></li>
+                    <li class="menu-mobile__items"><a class="menu-mobile__links" href="campeonato.html">Campeonato</a></li>
+                    <li class="menu-mobile__items"><a class="menu-mobile__links" href="eletiva2019.html">Eletiva 2019</a></li>
+                    <li class="menu-mobile__items"><a id="contato" class="menu-mobile__links" href="#Contato">Contato</a></li>
+                </ul><!--menu-mobile__nav-->
+            </nav><!--menu-mobile-->
+        </div><!--container-->
     </header>
-
-
-    <section class="banner-Eletiva2019">
-
-        <div class="center">
-
-            <div class="content-banner">
-
-                <h1>Dc Games 2019</h2>
-                <h2>Onde tudo começou!</h2>
-                <i class="fas fa-gamepad"></i>
-
-            </div><!--content-banner-->
-
-        </div><!--center-->
-
-    </section><!--banner-Eletiva2019-->
-
-    <section class="sobre center" id="Sobre">
-
-        <div class="space">
-
-            <div class="sobre-eletiva">
-                <h1>Eletiva 2019</h1>
-
-                <p>
-                    Foi no 1º ano da eletiva Dc Games, integrado somente para o ensino fundamental, que os professores Rogério, Luiz Antônio e Tatiana Albanezi tinham como propósito divulgar a educação através dos games e quebrar com o estereótipo de que games não agregam nada na vida.
-                </p>
-
-                <p>
-                    As habilidades em foco eram nas dicisplinas de Inglês, Geografia e História, além do espírito competitivo do campeonato que foi realizado e todo o preparamento de divulgação de eletiva.
-                    Segue aqui alguma das habilidades desenvolvidas:
-                    <ul>
-                        <li>Identificar os pontos cardeais e colaterais, cartografia, coordenadas geográficas, geopolítica;</li>
-                        <li>Saber reconhecer o contexto histórico das guerras ocorridas ao longo da história como a 1ª Guerra Mundial;</li>
-                        <li>Saber reconhecer o contexto histórico dos video games;</li>
-                        <li>Entender o inglês falado e escrito no mundo dos games;</li>
-                        <li>Desenvolver o trabalho em equipe.</li>
-                    </ul>
-                </p>
-
-            </div><!--sobre-eletiva-->
-
-            <div class="trailer">
-
-                <h1>Trailer Dc Games</h1>
-
-                <video src="./assets/videos/trailerDcGames.mp4" controls></video>
-
-            </div><!--trailer-->
-
-        </div><!--space-->
-
-    </section><!--sobre center-->
-
-    <section class="campeonato">
-
-        <div class="content-camp">
-
-            <h2>Campeonato</h2>
-            <p>Conheça um pouco mais sobre os </p>
-            <p>torneios realizados</p>
-            <a href="campeonato.html"><input type="submit" value="Saiba Mais"></a>
-
-        </div><!--content-camp-->
-
-        <div class="img-trofeu"></div><!--img-riven-->
-
-        <div class="clear"></div>
-
-    </section><!--campeonato-->
-
-
-    <section class="slider-professores center" style="background-color: #22686d;">
-
-        <div class="arrow-left" onclick="anterior()"><i class="fas fa-chevron-left"></i></div><!--arrow-left-->
-        <div class="arrow-right" onclick="proximo()"><i class="fas fa-chevron-right"></i></div><!--arrow-right-->
-
-        <div class="slider">
-
-            <div class="slide-professor">
-
-                <div class="professor" style="background-image: url(./assets/imgProfessores/Rogério.jpeg); border-color: #154447;"></div><!--professor-->
-
-                <div class="content-professor">
-                    <h2>Professor Rogério</h2>
-                    <p>
-                        Graduado em Geografia pela Universidade Estadual de Ponta Grossa-PR (UEPG) e com mestrado em Geografia "Gestão do Território" pela mesma instituição.
-                        Possui experiência no ensino de Geografia e há três anos atua como professor no Programa de Ensino Integral (PEI) da Escola Cel. Nhonhô Braga, Piraju-sp.</p>
-                    <p>
-                        Atualmente cursa especialização em Geoprocessamento e Geotecnologias pela PUC-Minas 
-                        e atua também como professor de Topografia pelas Faculdades Integradas de Taguaí (FIT).
-                    </p>
-                </div><!--content-professor-->
-
-            </div><!--slide-professor-->
-
-            <div class="slide-professor">
-
-                <div class="professor profLuiz" style="background-image: url(./assets/imgProfessores/LuizAntonio.jpeg); border-color: #154447;"></div><!--professor-->
-
-                <div class="content-professor">
-                    <h2>Professor Luiz Antônio</h2>
-                    <p>Professor com 13 anos de experiência atuando em Geografia, História e Sociologia. Tem grande conhecimento na área de Tecnologia e no ramo comunicativo com formações de:</p>
-                    <p>
-                        Montagem e manutenção de computadores; web designer e software e hardware;
-                        <br>
-                        Comunicação e Marketing: 12 anos atuando como profissional de Rádio com diversas atribuições como: criação, direção, edição, produção, e operação
-                        <br>
-                        Além de outras formações.
-                    </p>
-                </div><!--content-professor-->
-
-            </div><!--slide-professor-->
-
-            <div class="slide-professor">
-
-                <div class="professor" style="background-image: url(./assets/imgProfessores/Tatiana.jpg); border-color: #154447;"></div><!--professor-->
-
-                <div class="content-professor">
-                    <h2>Professora Tatiana Albanezi Napolitano</h2>
-                    <p>Licenciada em letras com habilitação em Português/Inglês pela Faculdade Estadual de Filosofia Ciências e Letras de Jacarezinho-PR, em 1999.
-                    <br>
-                    Cursou Pós-graduação <i>lato sensu</i> em Língua Inglesa para Professores do Ensino Fundamental e Médio pela UNESP (2010-2011).</p>
-                    <p>
-                    É Professora Efetiva de Inglês, Ensino Fundamental e Médio, desde 2004. Afastada em 2013 para atuar como Coordenadora do Centro de Estudos de Língua junto à 
-                    EE Cel Nhonhô Braga.
-                    </p>
-                </div><!--content-professor-->
-
-            </div><!--slide-professor-->
-
-        </div><!--slider-->
-
-    </section><!--slider-professores center-->
-
-    <footer id="Contato">
-            
-        <div class="contato">
-
-            <h2>Caso você queira ficar conectado com o que fazemos na eletiva ou na escola acesse:</h2>
-
-            <div class="face">
-                <i class="fab fa-facebook"></i>
-
-                <a target="_blanck" href="https://www.facebook.com/people/Nhonh%C3%B4-Braga/100009296590353">Escola Nhonhô Braga</a>
-            </div><!--face-->
-
-            <hr>
-
-            <div class="desenvolvedor-site">
-
-                <a target="_blanck" href="https://github.com/GabrielWolf-Dev"><i class="fab fa-github"></i></a> 
-                <p>Desenvolvido por Gabriel Wolf</p>
-
-            </div><!--desenvolvedor-site-->
-
-        </div><!--contato-->
-
-        <div class="creditos">
-
-            <div class="creditos-imgs">
-
-                <h2>Imagens utilizadas:</h2>
-
-                <p>
-                    Imagem de <a target="__blank" href="https://pixabay.com/pt/users/thexomil-5376742/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2453777">Marko Deichmann</a> por <a target="__blank" href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2453777">Pixabay</a>
-                </p>
-
-                <p>
-                    Imagem de <a target="__blank" href="https://pixabay.com/pt/users/melloghg-4387859/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2015198">MelloGHG</a> por <a target="__blank" href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2015198">Pixabay</a>
-                </p>
-
-            </div><!--creditos-imgs-->
-
-        </div><!--creditos-->    
-
-    </footer>
-
-    <script src="./js/slider.js"></script>
     <script src="./js/menuMobile.js"></script>
 </body>
 </html>

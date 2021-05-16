@@ -1,4 +1,4 @@
-# Site [Dc Games](https://gabrielwolf-dev.github.io/Dc-Games/)
+# Website [Dc Games](https://gabrielwolf-dev.github.io/Dc-Games/)
 ![Logo da Dc Games](favicon.ico)
 
 ## Demonstração do site:
@@ -9,6 +9,8 @@
 Dc Games é uma disciplina eletiva da escola Coronel Nhonhô Braga que tem o intuito de levar o conhecimento através dos games.
 
 Foi o meu primeiro projeto realizado e aplicado com sucesso, ele já estava em desenvolvimento antes mesmo de eu aprender o github e foi atualizado várias vezes até chegar neste estado.
+
+A partir da data 15/05/2021, vou atualizar todo o código do Website Dc Games para padronizar o CSS com o BEM, construir um HTML mais semântico com o foco na acessibilidade do site.
 
 ## Solução do problema:
 
