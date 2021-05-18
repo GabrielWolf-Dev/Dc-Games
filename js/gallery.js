@@ -1,19 +1,16 @@
-let imgs = document.querySelectorAll('.img');
-let focoImg = document.querySelector('.focoImg');
-let imgFocada = document.getElementById('imgFocada');
-let btnClose = document.querySelector('.btnClose');
+let imgs = document.querySelectorAll('.main-champ__img');
+let focusImg = document.querySelector('.focus-img');
+let imgFocused = document.getElementById('img-focused');
 let getImg = '';
 
 for(let i=0; i < imgs.length; i++) {
     imgs[i].addEventListener('click', () => {
-
         getImg = imgs[i].getAttribute('src');
-        imgFocada.setAttribute('src', getImg);
-        focoImg.classList.toggle('active');
-
+        imgFocused.setAttribute('src', getImg);
+        focusImg.classList.add('focus-img--active');
     });
 }
 
-btnClose.addEventListener('click', () => {
-    focoImg.classList.toggle('active');
-});
+function closeImg(){
+    focusImg.classList.remove('focus-img--active');
+}

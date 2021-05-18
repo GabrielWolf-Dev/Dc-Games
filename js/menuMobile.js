@@ -9,10 +9,10 @@ const linksMenu = [
 function openMenu() {
    navMenu.classList.add('menu-mobile__nav--active');
    linksMenu.forEach(link => link.addEventListener('click', () => closeMenu()));
-   bgBlack.style.width = "100%";
+   bgBlack.classList.add('bg-black--active');
 }
 
 function closeMenu() {
    navMenu.classList.remove('menu-mobile__nav--active');
-   bgBlack.style.width = "0";
+   bgBlack.classList.remove('bg-black--active');
 }

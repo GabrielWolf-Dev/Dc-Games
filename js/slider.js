@@ -1,10 +1,10 @@
 let totalSlides = document.querySelectorAll('.slider-teachers__slide').length;
-let slideAtual = 0;
+let currentSlide = 0;
 
 let widthSlide = document.querySelector('.slider-teachers__slider-wrapper').style.width = `calc(100vw * ${totalSlides})`;
 
 
-let timeSlide = setInterval(proximo, 3000);
+let timeSlide = setInterval(next, 3000);
 
 let arrRightCancelTime = document.querySelector('.arrow-right').addEventListener('mouseover', () => {
     clearInterval(timeSlide);
@@ -15,32 +15,32 @@ let arrLeftCancelTime = document.querySelector('.arrow-left').addEventListener('
 });
 
 
-function proximo() {
+function next() {
 
-    slideAtual++;
-    if(slideAtual > (totalSlides - 1)) {
-        slideAtual = 0;
+    currentSlide++;
+    if(currentSlide > (totalSlides - 1)) {
+        currentSlide = 0;
     }
 
-    atualizarSlide();
+    updateSlide();
 }
 
 
-function anterior() {
+function prev() {
 
-    slideAtual--;
-    if(slideAtual < 0) {
-        slideAtual = totalSlides - 1;
+    currentSlide--;
+    if(currentSlide < 0) {
+        currentSlide = totalSlides - 1;
     }
 
-    atualizarSlide();
+    updateSlide();
 }
 
 
-function atualizarSlide() {
+function updateSlide() {
 
     let slideW = document.querySelector('.slider-teachers__slide').clientWidth;
-    let marginLeft = (slideAtual * slideW);
+    let marginLeft = (currentSlide * slideW);
     document.querySelector('.slider-teachers__slider-wrapper').style.marginLeft = `-${marginLeft}px`;
 
 }

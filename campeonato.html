@@ -29,6 +29,14 @@
 </head>
 <body>
     <div class="bg-black" onclick="closeMenu()"></div><!--bg-black-->
+
+    <div class="focus-img" onclick="closeImg()">
+        <div class="focus-img__box">
+            <img id="img-focused" />
+        </div><!--focus-img__box-->
+        <i onclick="closeImg()" class="fas fa-times-circle focus-img__btn-close"></i><!--btnClose-->
+    </div><!--focus-img-->
+
     <header>
         <div class="container">
             <img class="logo" src="./assets/img/Logotipo_DcGames.jpg" alt="Logotipo da Dc Games" />
@@ -63,6 +71,98 @@
             </nav><!--menu-mobile-->
         </div><!--container-->
     </header>
+
+    <section class="main-champ">
+        <h1 class="title">Galeria da eletiva:</h1>
+        <div class="container">
+            <img class="main-champ__img" src="./assets/gallery/culturaPop(1).png" alt="Imagem de cartazes sobre cultura Pop">
+            <img class="main-champ__img" src="./assets/gallery/culturaPop(2).png" alt="Imagem de cartazes sobre cultura Pop">
+            <img class="main-champ__img" src="./assets/gallery/culturaPop(3).png" alt="Imagem de cartazes sobre cultura Pop">
+            <img class="main-champ__img" src="./assets/gallery/Eletiva2019.png" alt="Foto da turma da eletiva Dc Games 2019">
+            <img class="main-champ__img" src="./assets/gallery/eletiva2020.png" alt="Foto da turma da eletiva Dc Games 2020">
+            <img class="main-champ__img" src="./assets/gallery/EstatuetasComp.png" alt="Estatuetas dos jogos competitivos">
+            <img class="main-champ__img" src="./assets/gallery/histBF(1).png" alt="Apresentação do jogo Battlefield 1 em relação com a 1ª Guerra Mundial">
+            <img class="main-champ__img" src="./assets/gallery/HistBF(2).png" alt="Apresentação do jogo Battlefield 1 em relação com a 1ª Guerra Mundial">
+            <img class="main-champ__img" src="./assets/gallery/HistCosoles(2).png" alt="Apresentação sobre a história dos consoles">
+            <img class="main-champ__img" src="./assets/gallery/HistCosoles(3).png" alt="Apresentação sobre a história dos consoles">
+            <img class="main-champ__img" src="./assets/gallery/jogandoGTAV.png" alt="Jogando GTA 5">
+            <img class="main-champ__img" src="./assets/gallery/planoCartesiano.png" alt="Cartaz do plano cartesiano e mapa do GTA 5">
+            <img class="main-champ__img" src="./assets/gallery/respModlEsports.png" alt="Apresentação do time de Fifa">
+            <img class="main-champ__img" src="./assets/gallery/teamWork.png" alt="Cartaz sobre o trabalho em equipe">
+        </div><!--container-->
+    </section><!--mainChamp-->
+
+    <main id="Sobre" class="container">
+        <h2 class="title">Segue aqui alguns dos melhores momentos do campeonato:</h2>
+
+        <section class="box-video">
+            <video controls class="box-video__video" src="./assets/videos/video1.mp4"></video>
+            <p class="box-video__description">
+                Os campeonatos aconteceram no telão do salão nobre da escola, contaram com grande público e uma torcida eufórica na platéia!
+                <br>
+                <br>
+                Os campeonatos também contaram com um time de narradores e comentaristas que deram um espetáculo no microfone!
+            </p><!--box-video__description-->
+        </section><!--box-video-->
+
+        <section class="box-video reverse">
+            <video controls class="box-video__video" src="./assets/videos/video2.mp4"></video>
+            <p class="box-video__description">
+                Para a organização da competição tivemos também uma equipe destinada para fiscalização dos cumprimentos dos regulamentos, que descontavam pontos de infrações e atitudes antidesportivas. Essa equipe também ficou responsável pelo ranking da competição.
+            </p><!--box-video__description-->
+        </section><!--box-video-->
+
+        <section class="box-video">
+            <video controls class="box-video__video" src="./assets/videos/video3.mp4"></video>
+            <div class="box-video__last-content">
+                <h3 class="title">Sala de games:</h3>
+                <p class="box-video__description">
+                    Os demais convidados da culminância 2019, poderiam interagir com alguns games havendo desafios propostos que demandam conhecimento ou habilidade em alguma disciplina.
+                </p><!--box-video__description-->
+            </div>
+        </section><!--box-video-->
+
+        <section class="eletiva">
+            <div class="eletiva__content">
+                <h2 class="eletiva__title">Campeonato</h2>
+                <p class="eletiva__description">Conheça um pouco mais sobre os </p>
+                <p class="eletiva__description">torneios realizados</p>
+                <a class="eletiva__link" href="campeonato.html">Saiba mais</a>
+            </div><!--eletiva-->
+    
+            <img class="eletiva__img" src="./assets/img/Logotipo_DcGames.jpg" alt="Ilustração de um troféu" />
+        </section><!--championship-->
+    </main><!--main-->
+
+    <footer id="Contato" class="footer">
+        <ul>
+            <li class="footer__links">
+                <i class="fab fa-facebook"></i>
+                <a target="_blanck" href="https://www.facebook.com/people/Nhonh%C3%B4-Braga/100009296590353">Escola Nhonhô Braga</a>
+            </li>
+            <li class="footer__links">
+                <i class="fab fa-youtube"></i>
+                <a target="_blanck" href="https://www.youtube.com/channel/UCF4HJWtTU4wQ3Oaziow6cPg">Sala de Leitura</a>
+            </li>
+            <li class="footer__links">
+                <i class="fab fa-github"></i>
+                <a target="_blanck" href="https://github.com/GabrielWolf-Dev">Desenvolvido por Gabriel Wolf</a>
+            </li>
+        </ul>
+
+        <div class="footer__credits">
+            <h4 class="footer__title">Imagens utilizadas:</h4>
+            <ul>
+                <li class="footer__links">
+                    Imagem de <a target="__blank" href="https://pixabay.com/pt/users/thexomil-5376742/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2453777">Marko Deichmann</a> por <a target="__blank" href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2453777">Pixabay</a>
+                </li>
+                <li class="footer__links">
+                    Imagem de <a target="__blank" href="https://pixabay.com/pt/users/melloghg-4387859/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2015198">MelloGHG</a> por <a target="__blank" href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2015198">Pixabay</a>
+                </li>
+            </ul>
+        </div><!--footer__credits-->
+    </footer><!--footer-->
     <script src="./js/menuMobile.js"></script>
+    <script src="./js/gallery.js"></script>
 </body>
 </html>
