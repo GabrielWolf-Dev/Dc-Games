@@ -37,10 +37,10 @@
             <nav class="menu-desktop">
                 <ul>
                     <li class="menu-desktop__items"><a class="menu-desktop__links" href="index.html">Início</a></li>
-                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="#Sobre">Sobre</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="#About">Sobre</a></li>
                     <li class="menu-desktop__items"><a class="menu-desktop__links" href="campeonato.html">Campeonato</a></li>
                     <li class="menu-desktop__items"><a class="menu-desktop__links" href="eletiva2019.html">Eletiva 2019</a></li>
-                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="#Contato">Contato</a></li>
+                    <li class="menu-desktop__items"><a class="menu-desktop__links" href="#Contact">Contato</a></li>
                     <div class="clear"></div><!--clear-->
                 </ul>
             </nav><!--menu-desktop-->
@@ -56,21 +56,21 @@
                     </div>
 
                     <li class="menu-mobile__items"><a class="menu-mobile__links" href="index.html">Início</a></li>
-                    <li class="menu-mobile__items"><a id="sobre" class="menu-mobile__links" href="#Sobre">Sobre</a></li>
+                    <li class="menu-mobile__items"><a id="sobre" class="menu-mobile__links" href="#About">Sobre</a></li>
                     <li class="menu-mobile__items"><a class="menu-mobile__links" href="campeonato.html">Campeonato</a></li>
                     <li class="menu-mobile__items"><a class="menu-mobile__links" href="eletiva2019.html">Eletiva 2019</a></li>
-                    <li class="menu-mobile__items"><a id="contato" class="menu-mobile__links" href="#Contato">Contato</a></li>
+                    <li class="menu-mobile__items"><a id="contato" class="menu-mobile__links" href="#Contact">Contato</a></li>
                 </ul><!--menu-mobile__nav-->
             </nav><!--menu-mobile-->
         </div><!--container-->
     </header>
 
-    <section class="banner">
+    <section class="banner-home banner">
         <div class="banner__content">
             <h1 class="banner__title">Eletiva - Dc Games Escola Coronel Nhonhô Braga de Piraju</h1>
             <i class="fas fa-gamepad banner__icon"></i>
         </div><!--banner__content-->
-    </section><!--banner-->
+    </section><!--banner-home-->
 
     <main class="container">
         <section id="Sobre" class="about">
@@ -82,12 +82,12 @@
             </p>
         </section><!--about-->
 
-        <section id="Sobre" class="about">
+        <section id="About" class="about">
             <h2 class="title">Proposta da Dc Games</h2>
             <p class="content">
                 Na eletiva Dc Games de 2020, vamos mesclar a biologia com a geografia, propondo habilidades de localização geográfica das pandemias e estudo das células e vírus que junto com isso, teremos a atuação dos games e simuladores para termos um estudo aprofundado das nossas disciplinas, incluindo Resident evil e o simulador Idle Human. Além disso, continuará os campeonatos da Dc Games, que também feito em 2019, mas teremos outras modalidades.
                 <br>
-                Para saber mais, visualize a nossa ementa da <a target="_blank" class="about__link" href="./assets/documents/DC Games 2020 plano.pdf">eletiva 2020.</a>
+                Para saber mais, visualize a nossa ementa da <a target="_blank" class="about__link" href="./assets/documents/dcGames_plano.pdf">eletiva 2020.</a>
             </p>
         </section><!--about-->
 
@@ -109,8 +109,7 @@
         <section class="championship">
             <div class="championship__content">
                 <h2 class="championship__title">Campeonato</h2>
-                <p class="championship__description">Conheça um pouco mais sobre os </p>
-                <p class="championship__description">torneios realizados</p>
+                <p class="championship__description">Conheça um pouco mais sobre os torneios realizados</p>
                 <a class="championship__link" href="campeonato.html">Saiba mais</a>
             </div><!--content-camp-->
     
@@ -119,22 +118,21 @@
 
         <section class="eletiva">
             <div class="eletiva__content">
-                <h2 class="eletiva__title">Campeonato</h2>
-                <p class="eletiva__description">Conheça um pouco mais sobre os </p>
-                <p class="eletiva__description">torneios realizados</p>
-                <a class="eletiva__link" href="campeonato.html">Saiba mais</a>
-            </div><!--eletiva-->
+                <h2 class="eletiva__title">Eletiva 2019</h2>
+                <p class="eletiva__description">Para mais informações sobre as eletivas passadas e seus eventos</p>
+                <a class="eletiva__link" href="eletiva2019.html">Saiba mais</a>
+            </div><!--eletiva__content-->
     
             <img class="eletiva__img" src="./assets/img/Logotipo_DcGames.jpg" alt="Ilustração de um troféu" />
-        </section><!--championship-->
+        </section><!--eletiva-->
 
-        <section class="slider-teachers container">
+        <section class="slider-teachers slider-teachers--bg-purple container">
             <i onclick="prev()" class="fas fa-chevron-left arrow-left"></i>
             <i onclick="next()" class="fas fa-chevron-right arrow-right"></i>
     
             <div class="slider-teachers__slider-wrapper">
                 <article class="slider-teachers__slide">
-                    <div class="slider-teachers__teacher slider-teachers__teacher-1" style="background-image: url(./assets/imgProfessores/Rogério.jpeg);"></div><!--teacher-->
+                    <div class="slider-teachers__teacher teacher--border-purple slider-teachers__teacher--space" style="background-image: url(./assets/imgTeachers/rogério.jpeg);"></div><!--teacher-->
     
                     <div class="slider-teachers__content">
                         <h2 class="slider-teachers__content__name">Professor Rogério</h2>
@@ -151,7 +149,7 @@
                 </article><!--slider-teachers__slide-->
     
                 <article class="slider-teachers__slide">
-                    <div class="slider-teachers__teacher" style="background-image: url(./assets/imgProfessores/Gabriel.jpeg);"></div><!--slider-teachers__teacher-->
+                    <div class="slider-teachers__teacher teacher--border-purple" style="background-image: url(./assets/imgTeachers/gabriel.jpeg);"></div><!--slider-teachers__teacher-->
     
                     <div class="slider-teachers__content">
                         <h2 class="slider-teachers__content__name">Professor Gabriel Souza Mendes</h2>
@@ -163,7 +161,7 @@
         </section><!--slider-teachers-->
     </main><!--main container-->
 
-    <footer id="Contato" class="footer">
+    <footer id="Contact" class="footer">
         <ul>
             <li class="footer__links">
                 <i class="fab fa-facebook"></i>
